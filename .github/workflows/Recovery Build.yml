@@ -14,21 +14,23 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/Luoxue520QwQ/fox_device_xiaomi_polaris'
+        default: 'https://github.com/OrangeFox-Polaris/fox_device_xiaomi_polaris'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'main'
+        default: 'fox_12.1'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
         default: 'device/xiaomi/polaris'
       COMMON_TREE_URL:
-        description: 'COMMON_TREE_URL (if no common tree, leave blank)'
-        required: false
+        description: 'COMMON_TREE_URL'
+        required: true
+        default: 'https://github.com/OrangeFox-Polaris/fox_sdm845-common'
       COMMON_PATH:
-        description: 'COMMON_PATH (if no common tree, leave blank)'
-        required: false
+        description: 'COMMON_PATH'
+        required: true
+        default: 'device/xiaomi/sdm845-common'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
